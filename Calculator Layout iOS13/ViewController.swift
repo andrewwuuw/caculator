@@ -54,7 +54,12 @@ class ViewController: UIViewController {
     @IBAction func methodPressed(_ sender: UIButton) {
         if let resultValue = resultUILabel.text,
             let senderValue = sender.currentTitle {
-            resultUILabel.text = resultValue + senderValue
+            let lastString = String(Array(resultValue)[Array(resultValue).count-1])
+            if (lastString != "+") && (lastString != "-") && (lastString != "×") && (lastString != "÷") {
+                resultUILabel.text = resultValue + senderValue
+            } else if (lastString == "+") || (lastString == "-") || (lastString == "×") || (lastString == "÷") {
+                // TODO: - 點選其他 method 要能切換
+            }
         }
     }
     
