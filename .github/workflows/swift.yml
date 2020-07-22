@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build
-        run: xcodebuild clean build -project Calculator\ Layout\ iOS13.xcodeproj -scheme Calculator\ Layout\ iOS13 -destination "platform:iOS Simulator, id:3A1084C2-124C-4AB5-B6CD-F1BE6A1F4F28, OS:13.6, name:iPhone 11"
+        run: xcodebuild clean build -project Calculator\ Layout\ iOS13.xcodeproj -scheme Calculator\ Layout\ iOS13 -destination "platform:iOS Simulator, name:iPhone 11"
       - name: Run tests
         run: swift test -v
