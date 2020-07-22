@@ -58,7 +58,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="positiveNegativePressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="phT-re-zxy"/>
+                                                    <action selector="invertPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="vZO-Mr-Vog"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xg-es-CLv">
@@ -80,7 +80,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="methodPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="etu-KN-Jfg"/>
+                                                    <action selector="methodPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="e5q-FA-pKj"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -129,7 +129,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="methodPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="kch-lF-GWe"/>
+                                                    <action selector="methodPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="NVP-BN-ibl"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -178,7 +178,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="methodPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="NBn-Th-fAz"/>
+                                                    <action selector="methodPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="dA1-U5-80c"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -227,7 +227,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="methodPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="KSo-cv-o0p"/>
+                                                    <action selector="methodPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="sjE-u1-qgW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -267,6 +267,9 @@
                                                         <state key="normal" title="=">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="equalsPressed:" destination="ey4-0b-agg" eventType="touchUpInside" id="fsh-w2-xBO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
