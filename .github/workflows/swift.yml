@@ -1,4 +1,4 @@
-name: Swift
+name: CI
 
 on:
   push:
@@ -8,12 +8,14 @@ on:
 
 jobs:
   build:
-
+    name: Build & Test
     runs-on: macos-latest
-
+    strategy:
+      matrix:
+      destination: ['platform=iOS Simulator,OS=13.5,name=iPhone 11']
     steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+      - uses: actions/checkout@v2
+      - name: Build
+        run: xcodebuild clean build -project Calculator\ Layout\ iOS13.xcodeproj -scheme Calculator\ Layout\ iOS13 -destination "${destination}"
+      - name: Run tests
+        run: swift test -v
