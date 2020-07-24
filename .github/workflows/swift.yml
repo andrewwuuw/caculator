@@ -12,7 +12,5 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build
-        run: xcodebuild clean build -project Calculator\ Layout\ iOS13.xcodeproj -scheme Calculator\ Layout\ iOS13
       - name: Run tests
         run: swift test -v
